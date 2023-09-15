@@ -1,5 +1,4 @@
-/*
-play this: https://www.youtube.com/watch?v=d-diB65scQU
+/*{play this: https://www.youtube.com/watch?v=d-diB65scQU
 
 Sing along:
 
@@ -10,5 +9,13 @@ your file is getting way too big, bring a Router and make it thin, don't worry, 
 there is no data on that route, just write some code, you'll sort it out… don't worry, just hack it…
 I need this code, but don't know where, perhaps should make some middleware, don't worry, just hack it
 
-Pull your server into this file and start it!
+Pull your server into this file and start it!}
+
 */
+
+const server = require('./api/server');
+const PORT = process.env.PORT || 9000;
+
+server.listen(PORT, ()=> {
+    console.log('server is running!')
+})
